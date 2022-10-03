@@ -72,6 +72,8 @@ $ cat /etc/hosts
 ```shell script
 $ rabbitmqctl cluster_status
 ```
+![alt text](https://github.com/vasev85/rabbitMQ/blob/main/screens/3-cluster_console.png?raw=true)
+
 
 Для закрепления материала снова запустите скрипт producer.py и приложите скриншот выполнения команды на каждой из нод:
 
