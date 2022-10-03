@@ -63,6 +63,10 @@ $ cat /etc/hosts
 
 *В качестве решения домашнего задания приложите скриншоты из веб интерфейса с информацией о доступных нодах в кластере и включенной политикой.*
 
+![alt text](https://github.com/vasev85/rabbitMQ/blob/main/screens/3-cluster.png?raw=true)
+
+![alt text](https://github.com/vasev85/rabbitMQ/blob/main/screens/ha-policy.png?raw=true)
+
 Также приложите вывод команды с двух нод:
 
 ```shell script
