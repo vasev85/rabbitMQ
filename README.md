@@ -17,7 +17,7 @@
 
 *Итогом выполнения домашнего задания будет приложенный скриншот веб интерфейса RabbitMQ.*
 ![alt text](https://github.com/vasev85/rabitMQ/blob/main/screens/ex1.png?raw=true) 
----
+
 
 ### Задание 2. Отправка и получение сообщений.
 
