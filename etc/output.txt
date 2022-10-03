@@ -1,0 +1,7 @@
+
+yellow=`tput setaf 3`
+bel=`tput bel`
+red=`tput setaf 1`
+green=`tput setaf 2`
+reset=`tput sgr0`
+

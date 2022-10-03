@@ -1,0 +1,81 @@
+
+version: '3'
+services:
+  rabbit1:
+     container_name: some-rabbit
+     hostname: rmq01
+     image: rabbitmq:3-management
+     volumes:
+            - ./etc/:/etc/rabbitmq/
+            - ./data/:/var/lib/rabbitmq/
+            - ./logs/:/var/log/rabbitmq/
+     environment:
+        - TZ="Europe/Moscow"
+        - RABBITMQ_DEFAULT_USER=user
+        - RABBITMQ_DEFAULT_PASS=user
+        - RABBITMQ_ERLANG_COOKIE=super secret token
+  #   command:bash  /etc/rabbitmq/1.sh
+     ports:
+#- 5672:5672
+        - 8080:15672
+     expose:
+        - 5672
+        - 4369
+        - 25672
+     restart: unless-stopped
+     networks:
+      netology:
+       ipv4_address: 172.24.0.10
+       
+  rabbit2:
+     container_name: some-rabbit2
+     hostname: rmq02
+     image: rabbitmq:3-management
+     volumes:
+            - ./etc2/:/etc/rabbitmq/
+            - ./data2/:/var/lib/rabbitmq/
+            - ./logs2/:/var/log/rabbitmq/
+     environment:
+        - TZ="Europe/Moscow"
+        - RABBITMQ_DEFAULT_USER=user
+        - RABBITMQ_DEFAULT_PASS=user
+        - RABBITMQ_ERLANG_COOKIE=super secret token
+  #   command: bash /etc/rabbitmq/1.sh
+     ports:
+        
+        - 8082:15672
+     expose:
+        - 5672
+        - 4369
+        - 25672
+     restart: unless-stopped
+     networks:
+      netology:
+       ipv4_address: 172.24.0.11
+       
+  app:
+    build: ./code/
+    container_name:  rapit-python
+    volumes:
+      - ./code/:/code/
+#    ports:
+#      - "8000:8000"
+    depends_on:
+      - rabbit1
+      - rabbit2
+#    restart: always
+    networks:
+      netology:
+       ipv4_address: 172.24.0.100
+
+     
+networks:
+  netology:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+      - subnet: 172.24.0.0/24
+
+
+
