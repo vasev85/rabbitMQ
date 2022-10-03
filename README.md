@@ -16,9 +16,11 @@
 Добавьте management plug-in и зайдите в веб интерфейс.
 
 *Итогом выполнения домашнего задания будет приложенный скриншот веб интерфейса RabbitMQ.*
-![alt text](https://github.com/vasev85/rabitMQ/blob/main/screens/ex1.png?raw=true) 
-https://github.com/vasev85/rabbitMQ/blob/main/screens/ex1.png?raw=true
 
+![alt text](https://github.com/vasev85/rabbitMQ/blob/main/screens/ex1.png?raw=true)
+
+https://github.com/vasev85/rabbitMQ/blob/main/screens/ex1.png?raw=true
+![alt text](https://github.com/vasev85/redis/blob/main/ex2.png?raw=true) 
 
 ### Задание 2. Отправка и получение сообщений.
 
