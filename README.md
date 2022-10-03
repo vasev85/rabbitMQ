@@ -19,8 +19,7 @@
 
 ![alt text](https://github.com/vasev85/rabbitMQ/blob/main/screens/ex1.png?raw=true)
 
-https://github.com/vasev85/rabbitMQ/blob/main/screens/ex1.png?raw=true
-![alt text](https://github.com/vasev85/redis/blob/main/ex2.png?raw=true) 
+
 
 ### Задание 2. Отправка и получение сообщений.
 
@@ -38,6 +37,10 @@ $ pip install pika
 После чего запустите второй скрипт consumer.py и сделайте скриншот результата выполнения скрипта
 
 *В качестве решения домашнего задания приложите оба скриншота, сделанных на этапе выполнения.*
+
+![alt text](https://github.com/vasev85/rabbitMQ/blob/main/screens/2-hello.png?raw=true)
+
+![alt text](https://github.com/vasev85/rabbitMQ/blob/main/screens/2-consumer.png?raw=true)
 
 Для закрепления материала можете попробовать модифицировать скрипты, чтобы поменять название очереди и отправляемое сообщение.
 
